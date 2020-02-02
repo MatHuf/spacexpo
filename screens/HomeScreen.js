@@ -1,6 +1,9 @@
 import React from "react";
 import { Image, StyleSheet, Text, View, Button } from "react-native";
 
+import { GET_HISTORY } from "../queries";
+import HistoryListItem from "../components/listItems/HistoryListItem";
+
 import StarlinkLaunch from "../assets/images/StarlinkLaunch.jpg";
 
 const styles = StyleSheet.create({
@@ -26,8 +29,22 @@ export default function HomeScreen(props) {
       <Image source={StarlinkLaunch} style={styles.image} />
       <Text style={styles.title}>Welcome to SpaceXpo</Text>
       <Button
-        title="Get Info"
+        title="Missions"
         onPress={() => props.navigation.navigate("Details")}
+      />
+      <Button
+        title="Vehicles"
+        onPress={() => props.navigation.navigate("Details")}
+      />
+      <Button
+        title="History"
+        onPress={() =>
+          props.navigation.navigate("History", {
+            query: GET_HISTORY,
+            listKey: "history",
+            renderItem: HistoryListItem
+          })
+        }
       />
     </View>
   );

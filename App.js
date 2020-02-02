@@ -1,6 +1,7 @@
 import React from "react";
 import HomeScreen from "./screens/HomeScreen";
 import DetailsScreen from "./screens/DetailsScreen";
+import ListScreen from "./screens/ListScreen";
 
 // https://www.apollographql.com/docs/react/integrations/react-native/
 import { AppRegistry } from "react-native";
@@ -23,7 +24,8 @@ const apolloClient = new ApolloClient({
 const AppNavigator = createStackNavigator(
   {
     Home: HomeScreen,
-    Details: DetailsScreen
+    Details: DetailsScreen,
+    History: ListScreen
   },
   {
     initialRouteName: "Home"

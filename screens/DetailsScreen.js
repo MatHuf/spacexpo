@@ -4,6 +4,9 @@ import { StyleSheet, Text, View, SafeAreaView, FlatList } from "react-native";
 import { useQuery } from "@apollo/react-hooks";
 import gql from "graphql-tag";
 
+// TODO this screen needs to accept a query prop, a component to render the list items,
+// and the key of the object that's returned from the query
+
 const GET_LANDING_PADS = gql`
   {
     landingpads {
@@ -47,7 +50,6 @@ const styles = StyleSheet.create({
 });
 
 const PadListItem = listItem => {
-  console.log(listItem);
   return (
     <View style={styles.item}>
       <Text style={styles.title}>{listItem.item.item.id}</Text>
@@ -79,5 +81,5 @@ export default function DetailsScreen() {
 }
 
 DetailsScreen.navigationOptions = {
-  title: "Links"
+  title: "Details"
 };
