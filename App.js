@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import Home from "./src/views/Home";
-import Details from "./src/views/Detail";
+import React from "react";
+import HomeScreen from "./screens/HomeScreen";
+import DetailsScreen from "./screens/DetailsScreen";
 
 // https://www.apollographql.com/docs/react/integrations/react-native/
 import { AppRegistry } from "react-native";
@@ -22,8 +22,8 @@ const apolloClient = new ApolloClient({
 
 const AppNavigator = createStackNavigator(
   {
-    Home: Home,
-    Details: Details
+    Home: HomeScreen,
+    Details: DetailsScreen
   },
   {
     initialRouteName: "Home"
@@ -31,17 +31,12 @@ const AppNavigator = createStackNavigator(
 );
 const AppContainer = createAppContainer(AppNavigator);
 
-// TODO figure out why testing with Jest fails for this class
-// Warning: React.createElement: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: object.
-
-export default class App extends Component {
-  render() {
-    return (
-      <ApolloProvider client={apolloClient}>
-        <AppContainer />
-      </ApolloProvider>
-    );
-  }
+export default function App(props) {
+  return (
+    <ApolloProvider client={apolloClient}>
+      <AppContainer />
+    </ApolloProvider>
+  );
 }
 
 AppRegistry.registerComponent("SpaceXpo", () => App);

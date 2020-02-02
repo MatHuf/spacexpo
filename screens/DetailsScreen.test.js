@@ -1,11 +1,11 @@
 import React from "react";
 import renderer from "react-test-renderer";
 
-import Details from "./Detail";
+import DetailsScreen from "./DetailsScreen";
 
 describe("<Details />", () => {
   it("renders correctly", () => {
-    const tree = renderer.create(React.createElement(Details)).toJSON();
+    const tree = renderer.create(React.createElement(DetailsScreen)).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
