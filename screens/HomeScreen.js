@@ -34,7 +34,7 @@ export default function HomeScreen(props) {
       />
       <Button
         title="Vehicles"
-        onPress={() => props.navigation.navigate("Details")}
+        onPress={() => props.navigation.navigate("Vehicles")}
       />
       <Button
         title="History"
@@ -42,7 +42,8 @@ export default function HomeScreen(props) {
           props.navigation.navigate("History", {
             query: GET_HISTORY,
             listKey: "history",
-            renderItem: HistoryListItem
+            renderItem: HistoryListItem,
+            itemKey: "id"
           })
         }
       />

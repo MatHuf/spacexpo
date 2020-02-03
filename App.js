@@ -2,6 +2,7 @@ import React from "react";
 import HomeScreen from "./screens/HomeScreen";
 import DetailsScreen from "./screens/DetailsScreen";
 import ListScreen from "./screens/ListScreen";
+import VehicleListScreen from "./screens/VehicleListScreen";
 
 // https://www.apollographql.com/docs/react/integrations/react-native/
 import { AppRegistry } from "react-native";
@@ -25,7 +26,11 @@ const AppNavigator = createStackNavigator(
   {
     Home: HomeScreen,
     Details: DetailsScreen,
-    History: ListScreen
+    History: ListScreen,
+    Vehicles: VehicleListScreen,
+    Capsules: ListScreen,
+    Rockets: ListScreen,
+    Ships: ListScreen
   },
   {
     initialRouteName: "Home"

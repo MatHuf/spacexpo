@@ -31,7 +31,9 @@ export default function ListScreen(props) {
           <FlatList
             data={data[navigation.getParam("listKey")]}
             renderItem={navigation.getParam("renderItem")}
-            keyExtractor={item => `${item.id}`}
+            keyExtractor={item =>
+              `${item[`${navigation.getParam("itemKey")}`]}`
+            }
           />
         )
       )}
