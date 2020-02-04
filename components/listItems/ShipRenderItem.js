@@ -11,10 +11,13 @@ const styles = StyleSheet.create({
 });
 
 export default function ShipRenderItem(ship) {
+  console.log(ship);
   return (
     <View>
+      <Text>{ship.item.ship_id}</Text>
       <Text>{ship.item.ship_name}</Text>
-      <Text>{ship.item.ship_type}</Text>
+      <Text>Successful landings: {ship.item.successful_landings}</Text>
+      <Text>Attempted landings: {ship.item.attempted_landings}</Text>
     </View>
   );
 }

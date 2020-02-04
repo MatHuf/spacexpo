@@ -7,7 +7,7 @@ import {
   View,
   Button
 } from "react-native";
-import { GET_CAPSULES, GET_ROCKETS, GET_SHIPS } from "../queries";
+import { GET_CAPSULES, GET_ROCKETS, GET_DRONE_BARGES } from "../queries";
 import {
   CapsuleRenderItem,
   RocketRenderItem,
@@ -43,22 +43,20 @@ const vehicles = [
     itemKey: "rocket_id",
     renderItem: RocketRenderItem
   },
-  //   {
-  //     id: "landingPads",
-  //     name: "Landing Pads"
-  //   },
   {
-    id: "ships",
-    name: "Ships",
-    query: GET_SHIPS,
-    listKey: "ships",
+    id: "landingPads",
+    name: "Drone Landing Pads",
+    query: GET_DRONE_BARGES,
+    listKey: "dronebarges",
     itemKey: "ship_id",
-    renderItem: ShipRenderItem
+    renderItem: ShipRenderItem,
+    resultMap: result => {
+      return {
+        dronebarges: Object.keys(result).map(k => result[k])
+      };
+    }
   }
 ];
-
-// TODO figure out how to handle results from the GET_DRONE_BARGES query
-// where there are different keys for each result
 
 function vehicleRenderItem(vehicle, navigation) {
   return (
@@ -70,7 +68,8 @@ function vehicleRenderItem(vehicle, navigation) {
             query: vehicle.item.query,
             listKey: vehicle.item.listKey,
             itemKey: vehicle.item.itemKey,
-            renderItem: vehicle.item.renderItem
+            renderItem: vehicle.item.renderItem,
+            resultMap: vehicle.item.resultMap
           })
         }
       />

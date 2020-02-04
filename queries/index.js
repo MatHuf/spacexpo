@@ -73,22 +73,26 @@ export const GET_DRONE_BARGES = gql`
     ship0: ship(id: "ASOG") {
       ship_id
       ship_name
-      roles
+      attempted_landings
+      successful_landings
     }
     ship1: ship(id: "JRTI-1") {
       ship_id
       ship_name
-      roles
+      attempted_landings
+      successful_landings
     }
     ship2: ship(id: "JRTI-2") {
       ship_id
       ship_name
-      roles
+      attempted_landings
+      successful_landings
     }
     ship3: ship(id: "OCISLY") {
       ship_id
       ship_name
-      roles
+      attempted_landings
+      successful_landings
     }
   }
 `;

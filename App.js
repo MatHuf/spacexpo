@@ -22,6 +22,7 @@ const apolloClient = new ApolloClient({
   cache: new InMemoryCache()
 });
 
+//TODO make these all string consts
 const AppNavigator = createStackNavigator(
   {
     Home: HomeScreen,
@@ -30,7 +31,7 @@ const AppNavigator = createStackNavigator(
     Vehicles: VehicleListScreen,
     Capsules: ListScreen,
     Rockets: ListScreen,
-    Ships: ListScreen,
+    "Drone Landing Pads": ListScreen,
     Launches: ListScreen
   },
   {
