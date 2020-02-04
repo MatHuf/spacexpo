@@ -30,7 +30,8 @@ const AppNavigator = createStackNavigator(
     Vehicles: VehicleListScreen,
     Capsules: ListScreen,
     Rockets: ListScreen,
-    Ships: ListScreen
+    Ships: ListScreen,
+    Launches: ListScreen
   },
   {
     initialRouteName: "Home"

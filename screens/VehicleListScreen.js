@@ -8,6 +8,11 @@ import {
   Button
 } from "react-native";
 import { GET_CAPSULES, GET_ROCKETS, GET_SHIPS } from "../queries";
+import {
+  CapsuleRenderItem,
+  RocketRenderItem,
+  ShipRenderItem
+} from "../components/listItems";
 
 const styles = StyleSheet.create({
   container: {
@@ -20,29 +25,6 @@ const styles = StyleSheet.create({
     fontSize: 32
   }
 });
-
-function CapsuleRenderItem(capsule) {
-  return (
-    <View>
-      <Text>{capsule.item.name}</Text>
-    </View>
-  );
-}
-function RocketRenderItem(rocket) {
-  return (
-    <View>
-      <Text>{rocket.item.rocket_name}</Text>
-    </View>
-  );
-}
-function ShipRenderItem(ship) {
-  return (
-    <View>
-      <Text>{ship.item.ship_name}</Text>
-      <Text>{ship.item.ship_type}</Text>
-    </View>
-  );
-}
 
 const vehicles = [
   {
@@ -75,8 +57,10 @@ const vehicles = [
   }
 ];
 
+// TODO figure out how to handle results from the GET_DRONE_BARGES query
+// where there are different keys for each result
+
 function vehicleRenderItem(vehicle, navigation) {
-  console.log(navigation);
   return (
     <View>
       <Button

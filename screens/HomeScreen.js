@@ -1,8 +1,8 @@
 import React from "react";
 import { Image, StyleSheet, Text, View, Button } from "react-native";
 
-import { GET_HISTORY } from "../queries";
-import HistoryListItem from "../components/listItems/HistoryListItem";
+import { GET_HISTORY, GET_LAUNCHES } from "../queries";
+import { HistoryListItem, LaunchListItem } from "../components/listItems";
 
 import StarlinkLaunch from "../assets/images/StarlinkLaunch.jpg";
 
@@ -29,8 +29,15 @@ export default function HomeScreen(props) {
       <Image source={StarlinkLaunch} style={styles.image} />
       <Text style={styles.title}>Welcome to SpaceXpo</Text>
       <Button
-        title="Missions"
-        onPress={() => props.navigation.navigate("Details")}
+        title="Launches"
+        onPress={() =>
+          props.navigation.navigate("Launches", {
+            query: GET_LAUNCHES,
+            listKey: "launches",
+            renderItem: LaunchListItem,
+            itemKey: "flight_number"
+          })
+        }
       />
       <Button
         title="Vehicles"
