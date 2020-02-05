@@ -1,23 +1,21 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-
-const styles = StyleSheet.create({
-  item: {
-    backgroundColor: "#f9c2ff",
-    padding: 20,
-    marginVertical: 8,
-    marginHorizontal: 16
-  }
-});
+import { Text, View } from "react-native";
+import { listViewStyles as styles } from "../../styles";
 
 export default function ShipRenderItem(ship) {
-  console.log(ship);
   return (
-    <View>
-      <Text>{ship.item.ship_id}</Text>
-      <Text>{ship.item.ship_name}</Text>
-      <Text>Successful landings: {ship.item.successful_landings}</Text>
-      <Text>Attempted landings: {ship.item.attempted_landings}</Text>
+    <View style={styles.item}>
+      <View style={styles.header}>
+        <Text style={styles.headerText}>
+          {ship.item.ship_id} | {ship.item.ship_name}
+        </Text>
+      </View>
+      <View style={styles.detailContainer}>
+        <Text style={styles.detail}>
+          Successful landings: {ship.item.successful_landings}/
+          {ship.item.attempted_landings}
+        </Text>
+      </View>
     </View>
   );
 }

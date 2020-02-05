@@ -1,23 +1,18 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-
-const styles = StyleSheet.create({
-  item: {
-    backgroundColor: "#f9c2ff",
-    padding: 20,
-    marginVertical: 8,
-    marginHorizontal: 16
-  }
-});
-
-// TODO figure out why these are so nested
+import { Text, View } from "react-native";
+import { listViewStyles as styles } from "../../styles";
 
 export default function HistoryListItem(props) {
   return (
     <View style={styles.item}>
-      <Text style={styles.title}>{props.item.title}</Text>
-      <Text style={styles.title}>{props.item.event_date_utc}</Text>
-      <Text style={styles.title}>{props.item.details}</Text>
+      <View style={styles.header}>
+        <Text style={styles.headerText}>{props.item.title}</Text>
+
+        <Text style={styles.subHeaderText}>{props.item.event_date_utc}</Text>
+      </View>
+      <View style={styles.detailContainer}>
+        <Text style={styles.detail}>{props.item.details}</Text>
+      </View>
     </View>
   );
 }

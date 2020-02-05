@@ -1,25 +1,27 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View } from "react-native";
+import { listViewStyles as styles } from "../../styles";
 
-const styles = StyleSheet.create({
-  item: {
-    backgroundColor: "#f9c2ff",
-    padding: 20,
-    marginVertical: 8,
-    marginHorizontal: 16
-  }
-});
-
-// TODO figure out why these are so nested
+// TODO convert the parent view for this one to use sections and organize by year
+// Consider making the vehicle and launch locations links to view details on those items
 
 export default function LaunchListItem(props) {
   return (
     <View style={styles.item}>
-      <Text style={styles.title}>Launch {props.item.flight_number}</Text>
-      <Text style={styles.title}>{props.item.launch_year}</Text>
-      <Text style={styles.title}>{props.item.rocket.rocket_name}</Text>
-      <Text style={styles.title}>{props.item.launch_site.site_name}</Text>
-      <Text style={styles.title}>{props.item.details}</Text>
+      <View style={styles.header}>
+        <Text style={styles.headerText}>Launch {props.item.flight_number}</Text>
+        <Text style={styles.subHeaderText}>
+          {props.item.rocket.rocket_name} | {props.item.launch_site.site_name}
+        </Text>
+      </View>
+      <View style={styles.detailContainer}>
+        <Text style={styles.detail}>
+          {props.item.details ? props.item.details : "No description available"}
+          {props.item.details && props.item.details.slice(-1) === "."
+            ? ""
+            : "."}
+        </Text>
+      </View>
     </View>
   );
 }

@@ -2,7 +2,6 @@ import React from "react";
 import { StyleSheet, Text, SafeAreaView, FlatList } from "react-native";
 
 import { useQuery } from "@apollo/react-hooks";
-import { DepthDataAccuracy } from "expo/build/AR";
 
 const styles = StyleSheet.create({
   container: {
