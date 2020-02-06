@@ -42,26 +42,16 @@ export const GET_CAPSULES = gql`
   }
 `;
 
-export const GET_SHIPS = gql`
-  {
-    ships {
-      ship_id
-      ship_name
-      ship_type
-    }
-  }
-`;
-
 export const GET_LAUNCHES = gql`
   {
     launches {
       flight_number
-      launch_year
+      launch_date_utc
       rocket {
         rocket_name
       }
       launch_site {
-        site_name
+        site_name_long
       }
       details
     }

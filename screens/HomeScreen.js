@@ -1,9 +1,7 @@
 import React from "react";
 import { Image, StyleSheet, Text, View, Button } from "react-native";
-
 import { GET_HISTORY, GET_LAUNCHES } from "../queries";
 import { HistoryListItem, LaunchListItem } from "../components/listItems";
-
 import StarlinkLaunch from "../assets/images/StarlinkLaunch.jpg";
 
 const styles = StyleSheet.create({
@@ -35,7 +33,30 @@ export default function HomeScreen(props) {
             query: GET_LAUNCHES,
             listKey: "launches",
             renderItem: LaunchListItem,
-            itemKey: "flight_number"
+            itemKey: "flight_number",
+            hasSections: true,
+            renderSectionHeader: ({ section: { title } }) => (
+              <Text style={styles.header}>{title}</Text>
+            ),
+            resultMap: results => {
+              const sections = [
+                ...new Set(
+                  results.launches.map(l => {
+                    console.log(l);
+                    return { title: l.launch_date_utc.slice(0, 4) };
+                  })
+                )
+              ];
+              sections.forEach(
+                section =>
+                  (section.data = results.launches.filter(
+                    l => l.launch_date_utc.slice(0, 4) === section.title
+                  ))
+              );
+              return {
+                launches: sections
+              };
+            }
           })
         }
       />
