@@ -1,30 +1,12 @@
 import React from "react";
-import {
-  StyleSheet,
-  Text,
-  SafeAreaView,
-  FlatList,
-  View,
-  Button
-} from "react-native";
+import { Text, SafeAreaView, FlatList, View, Button } from "react-native";
 import { GET_CAPSULES, GET_ROCKETS, GET_DRONE_BARGES } from "../queries";
 import {
   CapsuleRenderItem,
   RocketRenderItem,
   ShipRenderItem
 } from "../components/listItems";
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
-  },
-  title: {
-    fontSize: 32
-  }
-});
+import { listScreenStyles as styles } from "../styles";
 
 const vehicles = [
   {
@@ -58,18 +40,18 @@ const vehicles = [
   }
 ];
 
-function vehicleRenderItem(vehicle, navigation) {
+function vehicleRenderItem({ item }, navigation) {
   return (
     <View>
       <Button
-        title={vehicle.item.name}
+        title={item.name}
         onPress={() =>
-          navigation.navigate(`${vehicle.item.name}`, {
-            query: vehicle.item.query,
-            listKey: vehicle.item.listKey,
-            itemKey: vehicle.item.itemKey,
-            renderItem: vehicle.item.renderItem,
-            resultMap: vehicle.item.resultMap
+          navigation.navigate(`${item.name}`, {
+            query: item.query,
+            listKey: item.listKey,
+            itemKey: item.itemKey,
+            renderItem: item.renderItem,
+            resultMap: item.resultMap
           })
         }
       />
@@ -77,8 +59,7 @@ function vehicleRenderItem(vehicle, navigation) {
   );
 }
 
-export default function VehicleListScreen(props) {
-  const { navigation } = props;
+export default function VehicleListScreen({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
       <Text style={styles.title}>Vehicles</Text>

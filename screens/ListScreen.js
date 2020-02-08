@@ -1,28 +1,9 @@
 import React from "react";
-import {
-  StyleSheet,
-  Text,
-  SafeAreaView,
-  FlatList,
-  SectionList
-} from "react-native";
+import { Text, SafeAreaView, FlatList, SectionList } from "react-native";
 import { useQuery } from "@apollo/react-hooks";
+import { listScreenStyles as styles } from "../styles";
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
-  },
-  title: {
-    fontSize: 32
-  }
-});
-
-export default function ListScreen(props) {
-  const { navigation } = props;
-
+export default function ListScreen({ navigation }) {
   // TODO figure out how to work with Jest and this hook
   const { loading, data } = useQuery(navigation.getParam("query"));
 
@@ -38,7 +19,7 @@ export default function ListScreen(props) {
     if (hasSections) {
       return (
         <SectionList
-          data={results[navigation.getParam("listKey")]}
+          sections={results[navigation.getParam("listKey")]}
           renderItem={navigation.getParam("renderItem")}
           renderSectionHeader={navigation.getParam("renderSectionHeader")}
           keyExtractor={item => `${item[`${navigation.getParam("itemKey")}`]}`}

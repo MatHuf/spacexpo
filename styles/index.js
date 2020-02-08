@@ -31,5 +31,43 @@ export const listViewStyles = StyleSheet.create({
     paddingTop: 10,
     fontSize: 16,
     textAlign: "justify"
+  },
+  sectionHeader: {
+    backgroundColor: "#777777",
+    paddingVertical: 4,
+    paddingHorizontal: 8
+  },
+  sectionHeaderText: {
+    fontSize: 22,
+    color: "#ffffff"
+  }
+});
+
+export const homeScreenStyles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  image: {
+    width: 400,
+    height: 600,
+    marginBottom: 16
+  },
+  title: {
+    fontSize: 32
+  }
+});
+
+export const listScreenStyles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  title: {
+    fontSize: 32
   }
 });
