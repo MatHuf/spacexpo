@@ -4,7 +4,6 @@ import { useQuery } from "@apollo/react-hooks";
 import { listScreenStyles as styles } from "../styles";
 
 export default function ListScreen({ navigation }) {
-  // TODO figure out how to work with Jest and this hook
   const { loading, data } = useQuery(navigation.getParam("query"));
 
   const resultMap = navigation.getParam("resultMap");

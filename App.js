@@ -1,6 +1,5 @@
 import React from "react";
 import HomeScreen from "./screens/HomeScreen";
-import DetailsScreen from "./screens/DetailsScreen";
 import ListScreen from "./screens/ListScreen";
 import VehicleListScreen from "./screens/VehicleListScreen";
 
@@ -26,7 +25,6 @@ const apolloClient = new ApolloClient({
 const AppNavigator = createStackNavigator(
   {
     Home: HomeScreen,
-    Details: DetailsScreen,
     History: ListScreen,
     Vehicles: VehicleListScreen,
     Capsules: ListScreen,

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListScreen: Capsules renders correctly 1`] = `null`;
+
+exports[`ListScreen: History renders correctly 1`] = `null`;
+
+exports[`ListScreen: Landing Pads renders correctly 1`] = `null`;
+
+exports[`ListScreen: Launches renders correctly 1`] = `null`;
+
+exports[`ListScreen: Rockets renders correctly 1`] = `null`;
