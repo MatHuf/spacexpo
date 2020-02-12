@@ -9,7 +9,6 @@ export default class NavigationMock {
     this.itemKey = params.itemKey;
   }
   getParam(param) {
-    console.log(this[param]);
     switch (param) {
       case "query":
         return this.query;

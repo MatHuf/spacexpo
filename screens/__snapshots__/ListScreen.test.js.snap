@@ -1,11 +1,336 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ListScreen: Capsules renders correctly 1`] = `null`;
-
-exports[`ListScreen: History renders correctly 1`] = `null`;
-
-exports[`ListScreen: Landing Pads renders correctly 1`] = `null`;
-
-exports[`ListScreen: Launches renders correctly 1`] = `null`;
-
-exports[`ListScreen: Rockets renders correctly 1`] = `null`;
+exports[`ListScreen: Launches renders correctly 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "fontSize": 32,
+      }
+    }
+  />
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "data": Array [
+            Object {
+              "details": "Engine failure at 33 seconds and loss of vehicle",
+              "flight_number": 1,
+              "launch_date_utc": "2006-03-24T22:30:00.000Z",
+              "launch_site": Object {
+                "site_name_long": "Kwajalein Atoll Omelek Island",
+              },
+              "rocket": Object {
+                "rocket_name": "Falcon 1",
+              },
+            },
+          ],
+          "title": "2006",
+        },
+        Object {
+          "data": Array [
+            Object {
+              "details": "Successful first stage burn and transition to second stage, maximum altitude 289 km, Premature engine shutdown at T+7 min 30 s, Failed to reach orbit, Failed to recover first stage",
+              "flight_number": 2,
+              "launch_date_utc": "2007-03-21T01:10:00.000Z",
+              "launch_site": Object {
+                "site_name_long": "Kwajalein Atoll Omelek Island",
+              },
+              "rocket": Object {
+                "rocket_name": "Falcon 1",
+              },
+            },
+          ],
+          "title": "2007",
+        },
+      ]
+    }
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    onContentSizeChange={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    renderItem={[Function]}
+    renderSectionHeader={[Function]}
+    scrollEventThrottle={50}
+    sections={
+      Array [
+        Object {
+          "data": Array [
+            Object {
+              "details": "Engine failure at 33 seconds and loss of vehicle",
+              "flight_number": 1,
+              "launch_date_utc": "2006-03-24T22:30:00.000Z",
+              "launch_site": Object {
+                "site_name_long": "Kwajalein Atoll Omelek Island",
+              },
+              "rocket": Object {
+                "rocket_name": "Falcon 1",
+              },
+            },
+          ],
+          "title": "2006",
+        },
+        Object {
+          "data": Array [
+            Object {
+              "details": "Successful first stage burn and transition to second stage, maximum altitude 289 km, Premature engine shutdown at T+7 min 30 s, Failed to reach orbit, Failed to recover first stage",
+              "flight_number": 2,
+              "launch_date_utc": "2007-03-21T01:10:00.000Z",
+              "launch_site": Object {
+                "site_name_long": "Kwajalein Atoll Omelek Island",
+              },
+              "rocket": Object {
+                "rocket_name": "Falcon 1",
+              },
+            },
+          ],
+          "title": "2007",
+        },
+      ]
+    }
+    stickyHeaderIndices={
+      Array [
+        0,
+        3,
+      ]
+    }
+    stickySectionHeadersEnabled={true}
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#777777",
+              "paddingHorizontal": 8,
+              "paddingVertical": 4,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#ffffff",
+                "fontSize": 22,
+              }
+            }
+          >
+            2006
+          </Text>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "display": "flex",
+              "marginHorizontal": 16,
+              "marginVertical": 8,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "x": -5,
+                "y": -5,
+              },
+              "shadowOpacity": 50,
+              "shadowRadius": 2,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "#333333",
+                "paddingHorizontal": 8,
+                "paddingVertical": 4,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#ffffff",
+                  "fontSize": 22,
+                }
+              }
+            >
+              Launch 
+              1
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#ffffff",
+                  "fontSize": 18,
+                }
+              }
+            >
+              Falcon 1
+               | 
+              Kwajalein Atoll Omelek Island
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "padding": 20,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontSize": 16,
+                  "paddingTop": 10,
+                  "textAlign": "justify",
+                }
+              }
+            >
+              Engine failure at 33 seconds and loss of vehicle
+              .
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      />
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#777777",
+              "paddingHorizontal": 8,
+              "paddingVertical": 4,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#ffffff",
+                "fontSize": 22,
+              }
+            }
+          >
+            2007
+          </Text>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "display": "flex",
+              "marginHorizontal": 16,
+              "marginVertical": 8,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "x": -5,
+                "y": -5,
+              },
+              "shadowOpacity": 50,
+              "shadowRadius": 2,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "#333333",
+                "paddingHorizontal": 8,
+                "paddingVertical": 4,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#ffffff",
+                  "fontSize": 22,
+                }
+              }
+            >
+              Launch 
+              2
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#ffffff",
+                  "fontSize": 18,
+                }
+              }
+            >
+              Falcon 1
+               | 
+              Kwajalein Atoll Omelek Island
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "padding": 20,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontSize": 16,
+                  "paddingTop": 10,
+                  "textAlign": "justify",
+                }
+              }
+            >
+              Successful first stage burn and transition to second stage, maximum altitude 289 km, Premature engine shutdown at T+7 min 30 s, Failed to reach orbit, Failed to recover first stage
+              .
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      />
+    </View>
+  </RCTScrollView>
+</RCTSafeAreaView>
+`;
