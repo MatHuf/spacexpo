@@ -1,5 +1,449 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`ListScreen: Capsules renders correctly 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "fontSize": 32,
+      }
+    }
+  />
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "crew_capacity": 0,
+          "description": "Dragon is a reusable spacecraft developed by SpaceX, an American private space transportation company based in Hawthorne, California. Dragon is launched into space by the SpaceX Falcon 9 two-stage-to-orbit launch vehicle. The Dragon spacecraft was originally designed for human travel, but so far has only been used to deliver cargo to the International Space Station (ISS).",
+          "first_flight": "2010-12-08",
+          "id": "dragon1",
+          "name": "Dragon 1",
+        },
+        Object {
+          "crew_capacity": 7,
+          "description": "Dragon 2 (also Crew Dragon, Dragon V2, or formerly DragonRider) is the second version of the SpaceX Dragon spacecraft, which will be a human-rated vehicle. It includes a set of four side-mounted thruster pods with two SuperDraco engines each, which can serve as a launch escape system or launch abort system (LAS). In addition, it has much larger windows, new flight computers and avionics, and redesigned solar arrays, and a modified outer mold line from the initial cargo Dragon that has been flying for several years.",
+          "first_flight": "2019-03-02",
+          "id": "dragon2",
+          "name": "Dragon 2",
+        },
+      ]
+    }
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onContentSizeChange={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    updateCellsBatchingPeriod={50}
+    viewabilityConfigCallbackPairs={Array []}
+    windowSize={21}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "display": "flex",
+              "marginHorizontal": 16,
+              "marginVertical": 8,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "x": -5,
+                "y": -5,
+              },
+              "shadowOpacity": 50,
+              "shadowRadius": 2,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "#333333",
+                "paddingHorizontal": 8,
+                "paddingVertical": 4,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#ffffff",
+                  "fontSize": 22,
+                }
+              }
+            >
+              Dragon 1
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#ffffff",
+                  "fontSize": 18,
+                }
+              }
+            >
+              Crew: 
+              0
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#ffffff",
+                  "fontSize": 18,
+                }
+              }
+            >
+              First flight: 
+              2010-12-08
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "padding": 20,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontSize": 16,
+                  "paddingTop": 10,
+                  "textAlign": "justify",
+                }
+              }
+            >
+              Dragon is a reusable spacecraft developed by SpaceX, an American private space transportation company based in Hawthorne, California. Dragon is launched into space by the SpaceX Falcon 9 two-stage-to-orbit launch vehicle. The Dragon spacecraft was originally designed for human travel, but so far has only been used to deliver cargo to the International Space Station (ISS).
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "display": "flex",
+              "marginHorizontal": 16,
+              "marginVertical": 8,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "x": -5,
+                "y": -5,
+              },
+              "shadowOpacity": 50,
+              "shadowRadius": 2,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "#333333",
+                "paddingHorizontal": 8,
+                "paddingVertical": 4,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#ffffff",
+                  "fontSize": 22,
+                }
+              }
+            >
+              Dragon 2
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#ffffff",
+                  "fontSize": 18,
+                }
+              }
+            >
+              Crew: 
+              7
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#ffffff",
+                  "fontSize": 18,
+                }
+              }
+            >
+              First flight: 
+              2019-03-02
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "padding": 20,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontSize": 16,
+                  "paddingTop": 10,
+                  "textAlign": "justify",
+                }
+              }
+            >
+              Dragon 2 (also Crew Dragon, Dragon V2, or formerly DragonRider) is the second version of the SpaceX Dragon spacecraft, which will be a human-rated vehicle. It includes a set of four side-mounted thruster pods with two SuperDraco engines each, which can serve as a launch escape system or launch abort system (LAS). In addition, it has much larger windows, new flight computers and avionics, and redesigned solar arrays, and a modified outer mold line from the initial cargo Dragon that has been flying for several years.
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</RCTSafeAreaView>
+`;
+
+exports[`ListScreen: History renders correctly 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "fontSize": 32,
+      }
+    }
+  />
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "details": "Falcon 1 becomes the first privately developed liquid fuel rocket to reach Earth orbit.",
+          "event_date_utc": "2008-09-28T23:15:00Z",
+          "id": 1,
+          "title": "Falcon 1 Makes History",
+        },
+        Object {
+          "details": "NASA awards SpaceX $1.6B Commercial Resupply Services (CRS) contract.",
+          "event_date_utc": "2008-12-23T01:00:00Z",
+          "id": 2,
+          "title": "SpaceX Wins $1.6B CRS Contract",
+        },
+      ]
+    }
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onContentSizeChange={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    updateCellsBatchingPeriod={50}
+    viewabilityConfigCallbackPairs={Array []}
+    windowSize={21}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "display": "flex",
+              "marginHorizontal": 16,
+              "marginVertical": 8,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "x": -5,
+                "y": -5,
+              },
+              "shadowOpacity": 50,
+              "shadowRadius": 2,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "#333333",
+                "paddingHorizontal": 8,
+                "paddingVertical": 4,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#ffffff",
+                  "fontSize": 22,
+                }
+              }
+            >
+              Falcon 1 Makes History
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#ffffff",
+                  "fontSize": 18,
+                }
+              }
+            >
+              2008-09-28T23:15:00Z
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "padding": 20,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontSize": 16,
+                  "paddingTop": 10,
+                  "textAlign": "justify",
+                }
+              }
+            >
+              Falcon 1 becomes the first privately developed liquid fuel rocket to reach Earth orbit.
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "display": "flex",
+              "marginHorizontal": 16,
+              "marginVertical": 8,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "x": -5,
+                "y": -5,
+              },
+              "shadowOpacity": 50,
+              "shadowRadius": 2,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "#333333",
+                "paddingHorizontal": 8,
+                "paddingVertical": 4,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#ffffff",
+                  "fontSize": 22,
+                }
+              }
+            >
+              SpaceX Wins $1.6B CRS Contract
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#ffffff",
+                  "fontSize": 18,
+                }
+              }
+            >
+              2008-12-23T01:00:00Z
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "padding": 20,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontSize": 16,
+                  "paddingTop": 10,
+                  "textAlign": "justify",
+                }
+              }
+            >
+              NASA awards SpaceX $1.6B Commercial Resupply Services (CRS) contract.
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</RCTSafeAreaView>
+`;
+
 exports[`ListScreen: Launches renders correctly 1`] = `
 <RCTSafeAreaView
   emulateUnlessSupported={true}
@@ -330,6 +774,373 @@ exports[`ListScreen: Launches renders correctly 1`] = `
         onLayout={[Function]}
         style={null}
       />
+    </View>
+  </RCTScrollView>
+</RCTSafeAreaView>
+`;
+
+exports[`ListScreen: Rockets renders correctly 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "fontSize": 32,
+      }
+    }
+  />
+</RCTSafeAreaView>
+`;
+
+exports[`ListScreen: Rockets renders correctly 2`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "fontSize": 32,
+      }
+    }
+  />
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "attempted_landings": 0,
+          "ship_id": "ASOG",
+          "ship_name": "A Shortfall of Gravitas",
+          "successful_landings": 0,
+        },
+        Object {
+          "attempted_landings": 2,
+          "ship_id": "JRTI-1",
+          "ship_name": "Just Read The Instructions",
+          "successful_landings": 0,
+        },
+        Object {
+          "attempted_landings": 8,
+          "ship_id": "JRTI-2",
+          "ship_name": "Just Read The Instructions",
+          "successful_landings": 7,
+        },
+        Object {
+          "attempted_landings": 28,
+          "ship_id": "OCISLY",
+          "ship_name": "Of Course I Still Love You",
+          "successful_landings": 24,
+        },
+      ]
+    }
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onContentSizeChange={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    updateCellsBatchingPeriod={50}
+    viewabilityConfigCallbackPairs={Array []}
+    windowSize={21}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "display": "flex",
+              "marginHorizontal": 16,
+              "marginVertical": 8,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "x": -5,
+                "y": -5,
+              },
+              "shadowOpacity": 50,
+              "shadowRadius": 2,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "#333333",
+                "paddingHorizontal": 8,
+                "paddingVertical": 4,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#ffffff",
+                  "fontSize": 22,
+                }
+              }
+            >
+              ASOG
+               | 
+              A Shortfall of Gravitas
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "padding": 20,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontSize": 16,
+                  "paddingTop": 10,
+                  "textAlign": "justify",
+                }
+              }
+            >
+              Successful landings: 
+              0
+              /
+              0
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "display": "flex",
+              "marginHorizontal": 16,
+              "marginVertical": 8,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "x": -5,
+                "y": -5,
+              },
+              "shadowOpacity": 50,
+              "shadowRadius": 2,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "#333333",
+                "paddingHorizontal": 8,
+                "paddingVertical": 4,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#ffffff",
+                  "fontSize": 22,
+                }
+              }
+            >
+              JRTI-1
+               | 
+              Just Read The Instructions
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "padding": 20,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontSize": 16,
+                  "paddingTop": 10,
+                  "textAlign": "justify",
+                }
+              }
+            >
+              Successful landings: 
+              0
+              /
+              2
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "display": "flex",
+              "marginHorizontal": 16,
+              "marginVertical": 8,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "x": -5,
+                "y": -5,
+              },
+              "shadowOpacity": 50,
+              "shadowRadius": 2,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "#333333",
+                "paddingHorizontal": 8,
+                "paddingVertical": 4,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#ffffff",
+                  "fontSize": 22,
+                }
+              }
+            >
+              JRTI-2
+               | 
+              Just Read The Instructions
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "padding": 20,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontSize": 16,
+                  "paddingTop": 10,
+                  "textAlign": "justify",
+                }
+              }
+            >
+              Successful landings: 
+              7
+              /
+              8
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "display": "flex",
+              "marginHorizontal": 16,
+              "marginVertical": 8,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "x": -5,
+                "y": -5,
+              },
+              "shadowOpacity": 50,
+              "shadowRadius": 2,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "#333333",
+                "paddingHorizontal": 8,
+                "paddingVertical": 4,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#ffffff",
+                  "fontSize": 22,
+                }
+              }
+            >
+              OCISLY
+               | 
+              Of Course I Still Love You
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "padding": 20,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontSize": 16,
+                  "paddingTop": 10,
+                  "textAlign": "justify",
+                }
+              }
+            >
+              Successful landings: 
+              24
+              /
+              28
+            </Text>
+          </View>
+        </View>
+      </View>
     </View>
   </RCTScrollView>
 </RCTSafeAreaView>

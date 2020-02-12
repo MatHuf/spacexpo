@@ -2,7 +2,13 @@ import React from "react";
 import renderer, { act } from "react-test-renderer";
 import { MockedProvider, wait } from "@apollo/react-testing";
 import ListScreen from "./ListScreen";
-import { launchesMock } from "../mocks/apolloMocks";
+import {
+  launchesMock,
+  historyMock,
+  capsulesMock,
+  rocketsMock,
+  landingPadsMock
+} from "../mocks/apolloMocks";
 import NavigationMock from "../mocks/navigationMock";
 import {
   launchesNavProps,
@@ -32,35 +38,59 @@ describe("ListScreen: Launches", () => {
     });
   });
 });
-// describe("ListScreen: History", () => {
-//   it("renders correctly", () => {
-//     const tree = renderer
-//       .create(<ListScreen navigation={historyNavMock} />)
-//       .toJSON();
-//     expect(tree).toMatchSnapshot();
-//   });
-// });
-// describe("ListScreen: Capsules", () => {
-//   it("renders correctly", () => {
-//     const tree = renderer
-//       .create(() => <ListScreen navigation={capsulesNavMock} />)
-//       .toJSON();
-//     expect(tree).toMatchSnapshot();
-//   });
-// });
-// describe("ListScreen: Rockets", () => {
-//   it("renders correctly", () => {
-//     const tree = renderer
-//       .create(() => <ListScreen navigation={rocketsNavMock} />)
-//       .toJSON();
-//     expect(tree).toMatchSnapshot();
-//   });
-// });
-// describe("ListScreen: Landing Pads", () => {
-//   it("renders correctly", () => {
-//     const tree = renderer
-//       .create(() => <ListScreen navigation={landingPadsNavMock} />)
-//       .toJSON();
-//     expect(tree).toMatchSnapshot();
-//   });
-// });
+describe("ListScreen: History", () => {
+  it("renders correctly", async () => {
+    let tree;
+    await act(async () => {
+      tree = renderer.create(
+        <MockedProvider addTypename={false} mocks={historyMock}>
+          <ListScreen navigation={historyNavMock} />
+        </MockedProvider>
+      );
+      await wait(0);
+      expect(tree.toJSON()).toMatchSnapshot();
+    });
+  });
+});
+describe("ListScreen: Capsules", () => {
+  it("renders correctly", async () => {
+    let tree;
+    await act(async () => {
+      tree = renderer.create(
+        <MockedProvider addTypename={false} mocks={capsulesMock}>
+          <ListScreen navigation={capsulesNavMock} />
+        </MockedProvider>
+      );
+      await wait(0);
+      expect(tree.toJSON()).toMatchSnapshot();
+    });
+  });
+});
+describe("ListScreen: Rockets", () => {
+  it("renders correctly", async () => {
+    let tree;
+    await act(async () => {
+      tree = renderer.create(
+        <MockedProvider addTypename={false} mocks={rocketsMock}>
+          <ListScreen navigation={rocketsNavMock} />
+        </MockedProvider>
+      );
+      await wait(0);
+      expect(tree.toJSON()).toMatchSnapshot();
+    });
+  });
+});
+describe("ListScreen: Rockets", () => {
+  it("renders correctly", async () => {
+    let tree;
+    await act(async () => {
+      tree = renderer.create(
+        <MockedProvider addTypename={false} mocks={landingPadsMock}>
+          <ListScreen navigation={landingPadsNavMock} />
+        </MockedProvider>
+      );
+      await wait(0);
+      expect(tree.toJSON()).toMatchSnapshot();
+    });
+  });
+});
