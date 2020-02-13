@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Text, View } from "react-native";
+import { Image, Text, View, SafeAreaView } from "react-native";
 import Button from "../components/StyledButton";
 import { homeScreenStyles as styles } from "../styles";
 import {
@@ -10,9 +10,12 @@ import StarlinkLaunch from "../assets/images/StarlinkLaunch.jpg";
 
 export default function HomeScreen({ navigation }) {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
+      <View style={styles.headerContainer}>
+        <Text style={styles.title}>SpaceXpo</Text>
+      </View>
       <Image source={StarlinkLaunch} style={styles.image} />
-      <Text style={styles.title}>Welcome to SpaceXpo</Text>
+
       <View style={styles.buttonContainer}>
         <Button
           title="Launches"
@@ -27,7 +30,7 @@ export default function HomeScreen({ navigation }) {
           onPress={() => navigation.navigate("History", historyNavProps)}
         />
       </View>
-    </View>
+    </SafeAreaView>
   );
 }
 

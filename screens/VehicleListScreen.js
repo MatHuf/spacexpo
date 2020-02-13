@@ -40,7 +40,6 @@ function vehicleRenderItem({ item }, navigation) {
 export default function VehicleListScreen({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.title}>Vehicles</Text>
       <FlatList
         data={vehicles}
         renderItem={item => vehicleRenderItem(item, navigation)}
