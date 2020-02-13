@@ -1,0 +1,376 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List Items <CapsuleRenderItem /> renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#ffffff",
+      "display": "flex",
+      "marginHorizontal": 16,
+      "marginVertical": 8,
+      "shadowColor": "#000000",
+      "shadowOffset": Object {
+        "x": -5,
+        "y": -5,
+      },
+      "shadowOpacity": 50,
+      "shadowRadius": 2,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#333333",
+        "paddingHorizontal": 8,
+        "paddingVertical": 4,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#ffffff",
+          "fontSize": 22,
+        }
+      }
+    >
+      Capsule Name
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#ffffff",
+          "fontSize": 18,
+        }
+      }
+    >
+      Crew: 
+      2
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#ffffff",
+          "fontSize": 18,
+        }
+      }
+    >
+      First flight: 
+      2000-01-01
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "padding": 20,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 16,
+          "paddingTop": 10,
+          "textAlign": "justify",
+        }
+      }
+    >
+      Capsule Description
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`List Items <HistoryListItem /> renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#ffffff",
+      "display": "flex",
+      "marginHorizontal": 16,
+      "marginVertical": 8,
+      "shadowColor": "#000000",
+      "shadowOffset": Object {
+        "x": -5,
+        "y": -5,
+      },
+      "shadowOpacity": 50,
+      "shadowRadius": 2,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#333333",
+        "paddingHorizontal": 8,
+        "paddingVertical": 4,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#ffffff",
+          "fontSize": 22,
+        }
+      }
+    >
+      History Title
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#ffffff",
+          "fontSize": 18,
+        }
+      }
+    >
+      2000-01-01
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "padding": 20,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 16,
+          "paddingTop": 10,
+          "textAlign": "justify",
+        }
+      }
+    >
+      History Details
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`List Items <LaunchListItem /> renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#ffffff",
+      "display": "flex",
+      "marginHorizontal": 16,
+      "marginVertical": 8,
+      "shadowColor": "#000000",
+      "shadowOffset": Object {
+        "x": -5,
+        "y": -5,
+      },
+      "shadowOpacity": 50,
+      "shadowRadius": 2,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#333333",
+        "paddingHorizontal": 8,
+        "paddingVertical": 4,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#ffffff",
+          "fontSize": 22,
+        }
+      }
+    >
+      Launch 
+      0
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#ffffff",
+          "fontSize": 18,
+        }
+      }
+    >
+      Rocket Name
+       | 
+      Site Name
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "padding": 20,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 16,
+          "paddingTop": 10,
+          "textAlign": "justify",
+        }
+      }
+    >
+      No description available
+      .
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`List Items <RocketRenderItem /> renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#ffffff",
+      "display": "flex",
+      "marginHorizontal": 16,
+      "marginVertical": 8,
+      "shadowColor": "#000000",
+      "shadowOffset": Object {
+        "x": -5,
+        "y": -5,
+      },
+      "shadowOpacity": 50,
+      "shadowRadius": 2,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#333333",
+        "paddingHorizontal": 8,
+        "paddingVertical": 4,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#ffffff",
+          "fontSize": 22,
+        }
+      }
+    >
+      Rocket Name
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#ffffff",
+          "fontSize": 18,
+        }
+      }
+    >
+      First flight: 
+      2000-01-01
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#ffffff",
+          "fontSize": 18,
+        }
+      }
+    >
+      Engines: 
+      5
+      x 
+      Fancy
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "padding": 20,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 16,
+          "paddingTop": 10,
+          "textAlign": "justify",
+        }
+      }
+    >
+      Rocket Description
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`List Items <ShipRenderItem /> renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#ffffff",
+      "display": "flex",
+      "marginHorizontal": 16,
+      "marginVertical": 8,
+      "shadowColor": "#000000",
+      "shadowOffset": Object {
+        "x": -5,
+        "y": -5,
+      },
+      "shadowOpacity": 50,
+      "shadowRadius": 2,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#333333",
+        "paddingHorizontal": 8,
+        "paddingVertical": 4,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#ffffff",
+          "fontSize": 22,
+        }
+      }
+    >
+      Ship Id
+       | 
+      Ship Name
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "padding": 20,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 16,
+          "paddingTop": 10,
+          "textAlign": "justify",
+        }
+      }
+    >
+      Successful landings: 
+      1
+      /
+      1
+    </Text>
+  </View>
+</View>
+`;

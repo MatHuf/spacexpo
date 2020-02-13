@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1581556525691" clover="3.2.0">
+  <project timestamp="1581556525691" name="All files">
+    <metrics statements="84" coveredstatements="74" conditionals="23" coveredconditionals="22" methods="30" coveredmethods="26" elements="137" coveredelements="122" complexity="0" loc="84" ncloc="84" packages="8" files="17" classes="17"/>
+    <package name="assets.images">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="StarlinkLaunch.jpg" path="C:\Development\Repos\spacexpo\assets\images\StarlinkLaunch.jpg">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="StyledButton.js" path="C:\Development\Repos\spacexpo\components\StyledButton.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+      <file name="StyledText.js" path="C:\Development\Repos\spacexpo\components\StyledText.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.listItems">
+      <metrics statements="14" coveredstatements="14" conditionals="6" coveredconditionals="5" methods="10" coveredmethods="10"/>
+      <file name="CapsuleRenderItem.js" path="C:\Development\Repos\spacexpo\components\listItems\CapsuleRenderItem.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="3" type="stmt"/>
+      </file>
+      <file name="HistoryListItem.js" path="C:\Development\Repos\spacexpo\components\listItems\HistoryListItem.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="3" type="stmt"/>
+      </file>
+      <file name="LaunchListItem.js" path="C:\Development\Repos\spacexpo\components\listItems\LaunchListItem.js">
+        <metrics statements="10" coveredstatements="10" conditionals="6" coveredconditionals="5" methods="6" coveredmethods="6"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="32" count="3" type="stmt"/>
+      </file>
+      <file name="RocketRenderItem.js" path="C:\Development\Repos\spacexpo\components\listItems\RocketRenderItem.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+      <file name="ShipRenderItem.js" path="C:\Development\Repos\spacexpo\components\listItems\ShipRenderItem.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="5" type="stmt"/>
+      </file>
+      <file name="index.js" path="C:\Development\Repos\spacexpo\components\listItems\index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="mocks">
+      <metrics statements="26" coveredstatements="20" conditionals="7" coveredconditionals="7" methods="2" coveredmethods="2"/>
+      <file name="apolloMocks.js" path="C:\Development\Repos\spacexpo\mocks\apolloMocks.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="68" count="1" type="stmt"/>
+        <line num="98" count="1" type="stmt"/>
+        <line num="154" count="1" type="stmt"/>
+      </file>
+      <file name="navigationMock.js" path="C:\Development\Repos\spacexpo\mocks\navigationMock.js">
+        <metrics statements="21" coveredstatements="15" conditionals="7" coveredconditionals="7" methods="2" coveredmethods="2"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="12" count="55" type="cond" truecount="7" falsecount="0"/>
+        <line num="14" count="10" type="stmt"/>
+        <line num="16" count="10" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="31" count="12" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="navigation">
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="navigationProps.js" path="C:\Development\Repos\spacexpo\navigation\navigationProps.js">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="30" count="3" type="stmt"/>
+        <line num="37" count="3" type="stmt"/>
+        <line num="44" count="3" type="stmt"/>
+        <line num="51" count="3" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="58" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="queries">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.js" path="C:\Development\Repos\spacexpo\queries\index.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="33" count="3" type="stmt"/>
+        <line num="45" count="3" type="stmt"/>
+        <line num="61" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="screens">
+      <metrics statements="24" coveredstatements="20" conditionals="10" coveredconditionals="10" methods="13" coveredmethods="9"/>
+      <file name="HomeScreen.js" path="C:\Development\Repos\spacexpo\screens\HomeScreen.js">
+        <metrics statements="5" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+      </file>
+      <file name="ListScreen.js" path="C:\Development\Repos\spacexpo\screens\ListScreen.js">
+        <metrics statements="13" coveredstatements="13" conditionals="10" coveredconditionals="10" methods="4" coveredmethods="4"/>
+        <line num="7" count="10" type="stmt"/>
+        <line num="9" count="10" type="stmt"/>
+        <line num="10" count="10" type="stmt"/>
+        <line num="11" count="10" type="cond" truecount="4" falsecount="0"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="15" count="10" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="18" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="32" count="8" type="stmt"/>
+        <line num="37" count="10" type="stmt"/>
+      </file>
+      <file name="VehicleListScreen.js" path="C:\Development\Repos\spacexpo\screens\VehicleListScreen.js">
+        <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="4"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="45" count="3" type="stmt"/>
+        <line num="46" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="styles">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.js" path="C:\Development\Repos\spacexpo\styles\index.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="46" count="4" type="stmt"/>
+        <line num="63" count="4" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
