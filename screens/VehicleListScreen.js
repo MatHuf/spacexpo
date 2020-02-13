@@ -1,5 +1,6 @@
 import React from "react";
-import { Text, SafeAreaView, FlatList, View, Button } from "react-native";
+import { Text, SafeAreaView, FlatList, View } from "react-native";
+import Button from "../components/StyledButton";
 import {
   capsulesNavProps,
   rocketsNavProps,

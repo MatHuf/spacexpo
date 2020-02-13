@@ -50,6 +50,9 @@ export const homeScreenStyles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center"
   },
+  buttonContainer: {
+    flexDirection: "row"
+  },
   image: {
     width: 400,
     height: 600,
@@ -69,5 +72,21 @@ export const listScreenStyles = StyleSheet.create({
   },
   title: {
     fontSize: 32
+  }
+});
+
+export const buttonStyles = StyleSheet.create({
+  button: {
+    backgroundColor: "#333333",
+    width: 110,
+    height: 120,
+    margin: 10,
+    padding: 10,
+    alignItems: "flex-end",
+    justifyContent: "flex-end"
+  },
+  title: {
+    color: "#EEEEEE",
+    fontSize: 20
   }
 });

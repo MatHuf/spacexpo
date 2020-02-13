@@ -1,5 +1,6 @@
 import React from "react";
-import { Image, Text, View, Button } from "react-native";
+import { Image, Text, View } from "react-native";
+import Button from "../components/StyledButton";
 import { homeScreenStyles as styles } from "../styles";
 import {
   launchesNavProps,
@@ -12,18 +13,20 @@ export default function HomeScreen({ navigation }) {
     <View style={styles.container}>
       <Image source={StarlinkLaunch} style={styles.image} />
       <Text style={styles.title}>Welcome to SpaceXpo</Text>
-      <Button
-        title="Launches"
-        onPress={() => navigation.navigate("Launches", launchesNavProps)}
-      />
-      <Button
-        title="Vehicles"
-        onPress={() => navigation.navigate("Vehicles")}
-      />
-      <Button
-        title="History"
-        onPress={() => navigation.navigate("History", historyNavProps)}
-      />
+      <View style={styles.buttonContainer}>
+        <Button
+          title="Launches"
+          onPress={() => navigation.navigate("Launches", launchesNavProps)}
+        />
+        <Button
+          title="Vehicles"
+          onPress={() => navigation.navigate("Vehicles")}
+        />
+        <Button
+          title="History"
+          onPress={() => navigation.navigate("History", historyNavProps)}
+        />
+      </View>
     </View>
   );
 }

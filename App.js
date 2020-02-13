@@ -21,7 +21,6 @@ const apolloClient = new ApolloClient({
   cache: new InMemoryCache()
 });
 
-//TODO make these all string consts
 const AppNavigator = createStackNavigator(
   {
     Home: HomeScreen,
