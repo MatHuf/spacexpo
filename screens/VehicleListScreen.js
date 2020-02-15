@@ -6,13 +6,13 @@ import {
   rocketsNavProps,
   landingPadsNavProps
 } from "../navigation/navigationProps";
-import { listScreenStyles as styles } from "../styles";
+import { vehicleScreenStyles as styles } from "../styles";
 
 const vehicles = [
   {
-    id: "capsules",
-    name: "Capsules",
-    navProps: capsulesNavProps
+    id: "landingPads",
+    name: "Drone Landing Pads",
+    navProps: landingPadsNavProps
   },
   {
     id: "rockets",
@@ -20,9 +20,9 @@ const vehicles = [
     navProps: rocketsNavProps
   },
   {
-    id: "landingPads",
-    name: "Drone Landing Pads",
-    navProps: landingPadsNavProps
+    id: "capsules",
+    name: "Capsules",
+    navProps: capsulesNavProps
   }
 ];
 
@@ -41,9 +41,11 @@ export default function VehicleListScreen({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
       <FlatList
+        style={styles.list}
         data={vehicles}
         renderItem={item => vehicleRenderItem(item, navigation)}
         keyExtractor={item => `${item.id}`}
+        inverted
       />
     </SafeAreaView>
   );
