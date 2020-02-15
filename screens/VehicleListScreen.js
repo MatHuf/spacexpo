@@ -1,18 +1,25 @@
 import React from "react";
-import { Text, SafeAreaView, FlatList, View } from "react-native";
+import {
+  ImageBackground,
+  SafeAreaView,
+  FlatList,
+  View,
+  ImageComponent
+} from "react-native";
 import Button from "../components/StyledButton";
 import {
   capsulesNavProps,
   rocketsNavProps,
   landingPadsNavProps
 } from "../navigation/navigationProps";
-import { listScreenStyles as styles } from "../styles";
+import { vehicleScreenStyles as styles } from "../styles";
+import Falcon9Landing from "../assets/images/Falcon9Landing.jpg";
 
 const vehicles = [
   {
-    id: "capsules",
-    name: "Capsules",
-    navProps: capsulesNavProps
+    id: "landingPads",
+    name: "Drone Landing Pads",
+    navProps: landingPadsNavProps
   },
   {
     id: "rockets",
@@ -20,9 +27,9 @@ const vehicles = [
     navProps: rocketsNavProps
   },
   {
-    id: "landingPads",
-    name: "Drone Landing Pads",
-    navProps: landingPadsNavProps
+    id: "capsules",
+    name: "Capsules",
+    navProps: capsulesNavProps
   }
 ];
 
@@ -40,12 +47,15 @@ function vehicleRenderItem({ item }, navigation) {
 export default function VehicleListScreen({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.title}>Vehicles</Text>
-      <FlatList
-        data={vehicles}
-        renderItem={item => vehicleRenderItem(item, navigation)}
-        keyExtractor={item => `${item.id}`}
-      />
+      <ImageBackground source={Falcon9Landing} style={styles.imageBackground}>
+        <FlatList
+          style={styles.list}
+          data={vehicles}
+          renderItem={item => vehicleRenderItem(item, navigation)}
+          keyExtractor={item => `${item.id}`}
+          inverted
+        />
+      </ImageBackground>
     </SafeAreaView>
   );
 }

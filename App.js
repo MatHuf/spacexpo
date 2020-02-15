@@ -40,7 +40,7 @@ const AppContainer = createAppContainer(AppNavigator);
 export default function App(props) {
   return (
     <ApolloProvider client={apolloClient}>
-      <AppContainer />
+      <AppContainer theme={"dark"} />
     </ApolloProvider>
   );
 }

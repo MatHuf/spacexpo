@@ -2,17 +2,20 @@ import React from "react";
 import { Text, View } from "react-native";
 import { listViewStyles as styles } from "../../styles";
 
-export const launchesMap = results => {
-  const sections = [
-    ...new Set(
-      results.launches.map(l => {
-        return { title: l.launch_date_utc.slice(0, 4) };
-      })
+export const launchesMap = ({ launches }) => {
+  const sections = launches
+    .filter(
+      (e, i) =>
+        launches.findIndex(
+          a => a.launch_date_utc.slice(0, 4) === e.launch_date_utc.slice(0, 4)
+        ) === i
     )
-  ];
+    .map(l => {
+      return { title: l.launch_date_utc.slice(0, 4) };
+    });
   sections.forEach(
     section =>
-      (section.data = results.launches.filter(
+      (section.data = launches.filter(
         l => l.launch_date_utc.slice(0, 4) === section.title
       ))
   );

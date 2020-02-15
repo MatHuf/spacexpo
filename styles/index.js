@@ -1,6 +1,10 @@
 import { StyleSheet } from "react-native";
 
 export const listViewStyles = StyleSheet.create({
+  container: {
+    backgroundColor: "#000000",
+    height: "100%"
+  },
   item: {
     display: "flex",
     backgroundColor: "#ffffff",
@@ -12,7 +16,7 @@ export const listViewStyles = StyleSheet.create({
     shadowRadius: 2
   },
   header: {
-    backgroundColor: "#333333",
+    backgroundColor: "#000000",
     paddingVertical: 4,
     paddingHorizontal: 8
   },
@@ -33,32 +37,74 @@ export const listViewStyles = StyleSheet.create({
     textAlign: "justify"
   },
   sectionHeader: {
-    backgroundColor: "#777777",
+    backgroundColor: "#333333",
     paddingVertical: 4,
-    paddingHorizontal: 8
+    paddingHorizontal: 15
   },
   sectionHeaderText: {
     fontSize: 22,
-    color: "#ffffff"
+    color: "#EEEEEE"
   }
 });
 
 export const homeScreenStyles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
+    backgroundColor: "#000000"
+  },
+  headerContainer: {
+    backgroundColor: "#000000",
+    width: "100%",
+    justifyContent: "center",
+    padding: 10
   },
   buttonContainer: {
-    flexDirection: "row"
+    backgroundColor: "#333333",
+    width: "100%",
+    flexDirection: "column",
+    height: "100%",
+    paddingVertical: 2
   },
   image: {
-    width: 400,
-    height: 600,
-    marginBottom: 16
+    width: "100%",
+    height: 560,
+    marginBottom: 2
   },
   title: {
+    fontSize: 32,
+    color: "#ffffff"
+  }
+});
+
+export const vehicleScreenStyles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#333333",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "100%"
+  },
+  list: {
+    width: "100%"
+  },
+  imageBackground: {
+    width: "100%",
+    height: "100%"
+  }
+});
+
+export const buttonStyles = StyleSheet.create({
+  button: {
+    backgroundColor: "#000000",
+    width: "100%",
+    height: 65,
+    justifyContent: "flex-end",
+    paddingVertical: 10,
+    paddingHorizontal: 25,
+    marginVertical: 2
+  },
+  title: {
+    color: "#EEEEEE",
     fontSize: 32
   }
 });
@@ -66,27 +112,12 @@ export const homeScreenStyles = StyleSheet.create({
 export const listScreenStyles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#333333",
     alignItems: "center",
     justifyContent: "center"
   },
   title: {
-    fontSize: 32
-  }
-});
-
-export const buttonStyles = StyleSheet.create({
-  button: {
-    backgroundColor: "#333333",
-    width: 110,
-    height: 120,
-    margin: 10,
-    padding: 10,
-    alignItems: "flex-end",
-    justifyContent: "flex-end"
-  },
-  title: {
-    color: "#EEEEEE",
-    fontSize: 20
+    fontSize: 24,
+    color: "#EEEEEE"
   }
 });
