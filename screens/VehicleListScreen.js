@@ -1,5 +1,11 @@
 import React from "react";
-import { Text, SafeAreaView, FlatList, View } from "react-native";
+import {
+  ImageBackground,
+  SafeAreaView,
+  FlatList,
+  View,
+  ImageComponent
+} from "react-native";
 import Button from "../components/StyledButton";
 import {
   capsulesNavProps,
@@ -7,6 +13,7 @@ import {
   landingPadsNavProps
 } from "../navigation/navigationProps";
 import { vehicleScreenStyles as styles } from "../styles";
+import Falcon9Landing from "../assets/images/Falcon9Landing.jpg";
 
 const vehicles = [
   {
@@ -40,13 +47,15 @@ function vehicleRenderItem({ item }, navigation) {
 export default function VehicleListScreen({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
-      <FlatList
-        style={styles.list}
-        data={vehicles}
-        renderItem={item => vehicleRenderItem(item, navigation)}
-        keyExtractor={item => `${item.id}`}
-        inverted
-      />
+      <ImageBackground source={Falcon9Landing} style={styles.imageBackground}>
+        <FlatList
+          style={styles.list}
+          data={vehicles}
+          renderItem={item => vehicleRenderItem(item, navigation)}
+          keyExtractor={item => `${item.id}`}
+          inverted
+        />
+      </ImageBackground>
     </SafeAreaView>
   );
 }

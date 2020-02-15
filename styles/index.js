@@ -86,6 +86,10 @@ export const vehicleScreenStyles = StyleSheet.create({
   },
   list: {
     width: "100%"
+  },
+  imageBackground: {
+    width: "100%",
+    height: "100%"
   }
 });
 
