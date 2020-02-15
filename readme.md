@@ -5,7 +5,7 @@ A simple Expo app that uses SpaceX-GraphQL to explore React Native, React Naviga
 ## TODO
 
 - Upgrade React Navigation to ^5.0 and create custom theme
-- Look into repeated years in launches
+- App icon and splash screen
 
 ## Resources
 

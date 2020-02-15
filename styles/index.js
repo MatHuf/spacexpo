@@ -1,32 +1,39 @@
 import { StyleSheet } from "react-native";
 
+const colors = {
+  black: "#000000",
+  white: "#FFFFFF",
+  darkGrey: "#333333",
+  lightGrey: "#EEEEEE"
+};
+
 export const listViewStyles = StyleSheet.create({
   container: {
-    backgroundColor: "#000000",
+    backgroundColor: colors.black,
     height: "100%"
   },
   item: {
     display: "flex",
-    backgroundColor: "#ffffff",
+    backgroundColor: colors.white,
     marginVertical: 8,
     marginHorizontal: 16,
-    shadowColor: "#000000",
+    shadowColor: colors.black,
     shadowOffset: { x: -5, y: -5 },
     shadowOpacity: 50,
     shadowRadius: 2
   },
   header: {
-    backgroundColor: "#000000",
+    backgroundColor: colors.black,
     paddingVertical: 4,
     paddingHorizontal: 8
   },
   headerText: {
     fontSize: 22,
-    color: "#ffffff"
+    color: colors.white
   },
   subHeaderText: {
     fontSize: 18,
-    color: "#ffffff"
+    color: colors.white
   },
   detailContainer: {
     padding: 20
@@ -37,29 +44,29 @@ export const listViewStyles = StyleSheet.create({
     textAlign: "justify"
   },
   sectionHeader: {
-    backgroundColor: "#333333",
+    backgroundColor: colors.darkGrey,
     paddingVertical: 4,
     paddingHorizontal: 15
   },
   sectionHeaderText: {
     fontSize: 22,
-    color: "#EEEEEE"
+    color: colors.lightGrey
   }
 });
 
 export const homeScreenStyles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#000000"
+    backgroundColor: colors.black
   },
   headerContainer: {
-    backgroundColor: "#000000",
+    backgroundColor: colors.black,
     width: "100%",
     justifyContent: "center",
     padding: 10
   },
   buttonContainer: {
-    backgroundColor: "#333333",
+    backgroundColor: colors.darkGrey,
     width: "100%",
     flexDirection: "column",
     height: "100%",
@@ -72,14 +79,14 @@ export const homeScreenStyles = StyleSheet.create({
   },
   title: {
     fontSize: 32,
-    color: "#ffffff"
+    color: colors.white
   }
 });
 
 export const vehicleScreenStyles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#333333",
+    backgroundColor: colors.darkGrey,
     alignItems: "center",
     justifyContent: "center",
     width: "100%"
@@ -95,7 +102,7 @@ export const vehicleScreenStyles = StyleSheet.create({
 
 export const buttonStyles = StyleSheet.create({
   button: {
-    backgroundColor: "#000000",
+    backgroundColor: colors.black,
     width: "100%",
     height: 65,
     justifyContent: "flex-end",
@@ -104,7 +111,7 @@ export const buttonStyles = StyleSheet.create({
     marginVertical: 2
   },
   title: {
-    color: "#EEEEEE",
+    color: colors.lightGrey,
     fontSize: 32
   }
 });
@@ -112,12 +119,12 @@ export const buttonStyles = StyleSheet.create({
 export const listScreenStyles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#333333",
+    backgroundColor: colors.darkGrey,
     alignItems: "center",
     justifyContent: "center"
   },
   title: {
     fontSize: 24,
-    color: "#EEEEEE"
+    color: colors.lightGrey
   }
 });
