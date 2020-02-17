@@ -25,6 +25,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "View data from the SpaceX-API",
+    "githubUrl": "https://github.com/MatHuf/spacexpo"
   }
 }
