@@ -7,52 +7,56 @@ const colors = {
   lightGrey: "#EEEEEE"
 };
 
-export const listViewStyles = StyleSheet.create({
-  container: {
-    backgroundColor: colors.black,
-    height: "100%"
-  },
-  item: {
-    display: "flex",
-    backgroundColor: colors.white,
-    marginVertical: 8,
-    marginHorizontal: 16,
-    shadowColor: colors.black,
-    shadowOffset: { x: -5, y: -5 },
-    shadowOpacity: 50,
-    shadowRadius: 2
-  },
-  header: {
-    backgroundColor: colors.black,
-    paddingVertical: 4,
-    paddingHorizontal: 8
-  },
-  headerText: {
-    fontSize: 22,
-    color: colors.white
-  },
-  subHeaderText: {
-    fontSize: 18,
-    color: colors.white
-  },
-  detailContainer: {
-    padding: 20
-  },
-  detail: {
-    paddingTop: 10,
-    fontSize: 16,
-    textAlign: "justify"
-  },
-  sectionHeader: {
-    backgroundColor: colors.darkGrey,
-    paddingVertical: 4,
-    paddingHorizontal: 15
-  },
-  sectionHeaderText: {
-    fontSize: 22,
-    color: colors.lightGrey
-  }
-});
+// Pass in values from Animated
+// opacity + offset
+export const listViewStyles = ({ headerText }) => {
+  return StyleSheet.create({
+    container: {
+      backgroundColor: colors.black,
+      height: "100%"
+    },
+    item: {
+      display: "flex",
+      backgroundColor: colors.white,
+      marginVertical: 8,
+      marginHorizontal: 16,
+      shadowColor: colors.black,
+      shadowOffset: { x: -5, y: -5 },
+      shadowOpacity: 50,
+      shadowRadius: 2
+    },
+    header: {
+      backgroundColor: colors.black,
+      paddingVertical: 4,
+      paddingHorizontal: 8
+    },
+    headerText: {
+      fontSize: 22,
+      color: colors.white
+    },
+    subHeaderText: {
+      fontSize: 18,
+      color: colors.white
+    },
+    detailContainer: {
+      padding: 20
+    },
+    detail: {
+      paddingTop: 10,
+      fontSize: 16,
+      textAlign: "justify"
+    },
+    sectionHeader: {
+      backgroundColor: colors.darkGrey,
+      paddingVertical: 4,
+      paddingHorizontal: 15
+    },
+    sectionHeaderText: {
+      fontSize: 22,
+      color: colors.lightGrey
+    }
+  });
+};
 
 export const homeScreenStyles = StyleSheet.create({
   container: {
